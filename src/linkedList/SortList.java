@@ -1,7 +1,21 @@
+/**********************************************************************
+ * 		Problem Name: Sort List 
+ * 
+ * 		Problem URL:  https://leetcode.com/problems/sort-list/
+ * 
+ * 		Tag: 		  Recursion, Merge Sort, Linked Lists
+ * 
+ * 		Description:  Sort a linked list in O(n log n) time using 
+ *                    constant space complexity.
+ *                    
+ * 		Time Complexity: O(n log n) using merge sort
+ * 
+ * 		Author:  Yuhao Fei
+ * 
+ **********************************************************************/
 package linkedList;
 /*
- * Sort a linked list in O(n log n) time using constant space complexity.
- */
+  */
 
 import dataStructures.ListNode;
 public class SortList {
