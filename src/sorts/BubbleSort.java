@@ -8,14 +8,17 @@ public class BubbleSort {
 		boolean swap = true;
 		while(swap) {
 			swap = false;
+			int newlen = 0; //store the position of last swap
 			for(int i = 0; i < len-1; i++) {
 				if(a[i] > a[i+1]){
 					int tmp = a[i];
 					a[i] = a[i+1];
 					a[i+1] = tmp;
 					swap = true;
+					newlen = i+1; //store the position of swap
 				} else {}
 			}
+			len = newlen;
 		}
 		return a;
 
