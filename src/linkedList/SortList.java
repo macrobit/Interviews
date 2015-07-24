@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-/**********************************************************************
+
+/*************************************************************************************
  * 		Problem Name: Sort List 
  * 
  * 		Problem URL:  https://leetcode.com/problems/sort-list/
@@ -13,16 +13,10 @@
  * 
  * 		Author:  Yuhao Fei
  * 
- **********************************************************************/
+ *************************************************************************************/
+
+
 package linkedList;
-/*
-  */
-=======
-package linkedList;
-/*
- * Sort a linked list in O(n log n) time using constant space complexity.
- */
->>>>>>> branch 'master' of https://github.com/macrobit/Interviews.git
 
 import dataStructures.ListNode;
 public class SortList {
