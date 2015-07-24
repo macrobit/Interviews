@@ -1,0 +1,11 @@
+Linked List:
+
+There are three mainly operations for linked list: append, delete, and insert.
+
+append: there are two position to append a new node, head and tail. 
+	If the node is appended before the head node, it is very simple: newNode.next = head.
+	If the node is appended after the tail node, you have to iterate the whole list.
+	
+delete: If you want to delete a specific node, the previous node before it must be known.
+
+insert: If you want to insert a new node at a specific position, you must know the current node at the position.
