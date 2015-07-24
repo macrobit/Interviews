@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**********************************************************************
  * 		Problem Name: Sort List 
  * 
@@ -16,6 +17,12 @@
 package linkedList;
 /*
   */
+=======
+package linkedList;
+/*
+ * Sort a linked list in O(n log n) time using constant space complexity.
+ */
+>>>>>>> branch 'master' of https://github.com/macrobit/Interviews.git
 
 import dataStructures.ListNode;
 public class SortList {
