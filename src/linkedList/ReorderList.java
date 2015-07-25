@@ -1,5 +1,5 @@
 /***********************************************************************************************
- *							Problem: Reorder a Linked List 	
+ *		Problem:     Reorder a Linked List 	
  * 
  * 		Description: Given a singly linked list L: L0¡úL1¡ú¡­¡úLn-1¡úLn,
  *					 reorder it to: L0¡úLn¡úL1¡úLn-1¡úL2¡úLn-2¡ú¡­
