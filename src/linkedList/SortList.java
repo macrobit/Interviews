@@ -22,7 +22,7 @@ import dataStructures.ListNode;
 public class SortList {
     private ListNode findMiddle(ListNode head) {
         if(head == null) return head;
-        
+        // quick and slow pointers
         ListNode slow = head, fast = head.next;
         while(fast != null && fast.next != null) {
             fast = fast.next.next;
