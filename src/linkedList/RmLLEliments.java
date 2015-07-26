@@ -50,6 +50,25 @@ public class RmLLEliments {
 		 
 	 }
 	 
+	 public ListNode rmElements(ListNode head, int val) {
+		 if(head == null) return head;
+		 
+		 ListNode dummy = new ListNode(0);
+		 dummy.next = head;
+		 head = dummy;
+		 
+		 while(head.next != null) {
+			 if(head.next.val == val) {
+				 head.next = head.next.next;
+			 } else {
+				 head = head.next;
+			 }			 
+		 }
+		 
+		 return head;
+		 
+	 }
+	 
 	 public static void main(String[] args) {
 		 ListNode head = new ListNode(1);
 		 head.add(2);
@@ -58,7 +77,7 @@ public class RmLLEliments {
 		 head.add(4);
 		 head.print();
 		 RmLLEliments test = new RmLLEliments();
-		 test.removeElements(head,2); 
+		 test.rmElements(head,2); 
 		 head.print();
 	 }
 }
