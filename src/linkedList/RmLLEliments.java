@@ -51,7 +51,7 @@ public class RmLLEliments {
 	 }
 	 
 	 public ListNode rmElements(ListNode head, int val) {
-		 if(head == null) return head;
+//		 if(head == null) return head;
 		 
 		 ListNode dummy = new ListNode(0);
 		 dummy.next = head;
@@ -65,7 +65,7 @@ public class RmLLEliments {
 			 }			 
 		 }
 		 
-		 return head;
+		 return dummy.next;
 		 
 	 }
 	 
