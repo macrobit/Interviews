@@ -46,8 +46,10 @@ public class SearchRange {
         else if(nums[end] == target) {
             result[0] = end;
         } else {
-            // if the first one doesn't exist, neither does the last one
+            // if the first one doesn't exist, neither does the last one. 
+        	// There is no need to run the left statements
             result[0] = result[1] = -1;
+            return result;
         }
 
         // get the last target's position
