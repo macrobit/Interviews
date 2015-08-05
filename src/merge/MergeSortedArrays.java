@@ -1,6 +1,9 @@
 package merge;
 import java.util.Arrays;
+
+
 public class MergeSortedArrays {
+	// method 1: no extra space used, end -> head.
 	public void merge(int[] nums1, int m, int[] nums2, int n){
 		int i = m-1; int j = n-1; int k = m+n-1;
 		while(i >= 0 && j >= 0){
@@ -15,7 +18,11 @@ public class MergeSortedArrays {
 		while(n > 0) 
 			nums1[m+n-1] = ((m==0) || nums1[m-1] < nums2[n-1]) ? nums2[--n] : nums1[--m];
 	}
-	
+
+	// method 2: use a new array to hold the result. head -> end
+	public int[] merge3(int[] nums1, int m, int[] nums2, int n) {
+		
+	}
 	public static void main(String[] args){
 		int[] nums1 = new int[7];
 		nums1[0] = 1;
