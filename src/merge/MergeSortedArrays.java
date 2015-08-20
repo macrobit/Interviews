@@ -1,4 +1,5 @@
 package merge;
+
 import java.util.Arrays;
 
 
@@ -20,8 +21,38 @@ public class MergeSortedArrays {
 	}
 
 	// method 2: use a new array to hold the result. head -> end
-	public int[] merge3(int[] nums1, int m, int[] nums2, int n) {
+	public int[] merge3(int[] A, int[] B) {
+		int[] result = new int[A.length + B.length];
+		int index = 0, indexA = 0, indexB = 0;
+		while(indexA < A.length && indexB < B.length) {
+			result[index++] = A[indexA] < B[indexB] ? A[indexA++] : B[indexB++];
+		}
 		
+		while(indexB < B.length)
+			result[index++] = B[indexB++];
+
+		while(indexA < A.length)
+			result[index++] = A[indexA++];
+	
+		return result;
+			
+	}
+	// method 3: a different version of method 2 using a for loop
+	public int[] merge4(int[] A, int[] B) {
+		int[] result = new int[A.length + B.length];
+		int indexA = 0, indexB = 0;
+		for(int i = 0; i < result.length; i++) {
+			if(indexB >= B.length)
+				result[i] = A[indexA++];
+			else if(indexA >= A.length)
+				result[i] = B[indexB++];
+			else if(A[indexA] < B[indexB])
+				result[i] = A[indexA++];
+			else
+				result[i] = B[indexB++];
+		}
+		
+		return result;
 	}
 	public static void main(String[] args){
 		int[] nums1 = new int[7];
